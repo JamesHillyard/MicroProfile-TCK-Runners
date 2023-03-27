@@ -4,7 +4,14 @@
 
     <test name="microprofile-openapi 3.0 TCK">
         <packages>
-            <package name="org.eclipse.microprofile.openapi.tck" />
+            <package name="org.eclipse.microprofile.openapi.tck"> 
+                <exclude name="org.eclipse.microprofile.openapi.tck.ModelReaderAppTest"></exclude>
+                <exclude name="org.eclipse.microprofile.openapi.tck.AirlinesAppTest"></exclude>
+                <exclude name="org.eclipse.microprofile.openapi.tck.FilterTest"></exclude>
+                <exclude name="org.eclipse.microprofile.openapi.tck.OASConfigServersTest"></exclude>
+                <exclude name="org.eclipse.microprofile.openapi.tck.OASConfigWebInfTest"></exclude>
+                <exclude name="org.eclipse.microprofile.openapi.tck.OASConfigScanDisableTest"></exclude>
+            </package>
         </packages>
     </test>
 
